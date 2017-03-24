@@ -31,8 +31,9 @@
 		<property name="dataSource" ref="dataSource"></property>
 		<!-- 配置 hibernate 配置文件的位置及名称 -->
 		<!-- <property name="configLocation" value="classpath:hibernate.cfg.xml"></property> -->
-		
-		<!-- 使用 hibernateProperties 属相来配置 Hibernate 原生的属性，代替上述需要hibernate.cfg.xml文件配置的方法 -->
+
+		<!-- 使用 hibernateProperties 属相来配置 Hibernate 原生的属性，代替上述需要hibernate.cfg.xml文件配置的方法。 
+			不推荐这种方式，hibernate基础属性最好在 hibernate.cfg.xml 中配置 -->
 		<property name="hibernateProperties">
 			<props>
 				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLInnoDBDialect</prop>
